@@ -1,0 +1,67 @@
+.row{ /*рядок*/
+    display: flex;
+    flex-direction: row; /*Розмiщення по горизонталi*/
+    justify-content: center; /*По центру*/
+}
+.row.r1{ /*Перший рядок*/
+    align-items: flex-end; /*Прiкрiпимо перший рядок вниз*/
+}
+.row.r2{ /*Другий рядок*/
+    padding-right: 20px; /*Другий рядок сдвинемо влiво на 20px*/
+}
+
+.box{ /*Властивостi для всiх блокiв*/
+    margin: 2px;
+}
+
+/*Першi три блока*/
+.box.yellow1{
+    width: 100px;
+    height: 60px;
+    background-color: yellow;
+}
+.box.red1{
+    width: 100px;
+    height: 160px;
+    background-color: red;
+}
+.box.green1{
+    width: 100px;
+    height: 120px;
+    background-color: green;
+}
+
+/*Другi три блока*/
+.box.green2{
+    height: 100px;
+    width: 130px;
+    background-color: green;
+}
+.box.yellow2{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+.box.red2{
+    height: 100px;
+    width: 130px;
+    background-color: red;
+}
+
+
+/*Третi три блока*/
+.box.yellow3{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+.box.red3{
+    width: 100px;
+    height: 140px;
+    background-color: red;
+}
+.box.green3{
+    width: 100px;
+    height: 60px;
+    background-color: green;
+}

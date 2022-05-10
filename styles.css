@@ -1,0 +1,32 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.menu{
+    border-collapse: collapse;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    border: 2px solid black;
+}
+.menuItem{
+    border: 1px solid black;
+    background-color: darkgray;
+
+    margin: 5px;
+}
+.menuItem:hover{
+    background-color: #ffe7ae;
+}
+
+p{
+    margin: 5px;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
