@@ -1,0 +1,83 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container { 
+    display: flex;
+    flex-direction: column;
+}
+
+.header { 
+    height: 400px; /*Висота верхнього блоку (header) – 400px*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size:cover; /*це робить так що б картинка не розтягувалась*/
+    background-image: url("img/candies.jpg"); /*Картинка у верхньому блоці – міститься у папці з завданням.
+    Кольори підібрати гармонійними до картинки в шапці*/
+}
+h1{
+    font-size: 4em;
+    background-color:#ffe4c4;
+    text-shadow: 3px 3px 1px #00000052;
+}
+
+.center { /*тут буде знаходитись меню й цукерки*/
+    height: 1000px; /*Висота двох основних блоків - 1000px. Їхнє співвідношення ширини 40 до 60. */
+    display: flex;
+    flex-direction: row;
+}
+.Menu{ /*У лівій частині міститься список.*/
+    width: 40%;
+    background-color: darkgrey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    text-align: center;
+}
+.menuOption{ /*Кнопка меню*/
+    background-color:transparent;
+}
+.menuOption:hover{
+    background-color: gray;
+}
+
+
+
+.MenuCandy{ 
+    width: 60%;
+    padding: 1em;
+    background-color:blanchedalmond;
+}
+.candyRow{/*Один рядок цукерок*/
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.candy{
+    width: 10%; /*Блок з зображенням цукерки і підписом – 10% від батьківського блоку.*/
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.candy:hover{
+    box-shadow: 0px 0px 5px 2px inset black;
+    border-radius: 2em;
+}
+img{
+    object-fit:fill;
+}
+
+.footer {
+    height: 50px; /*Висота блоку внизу (footer) – 50px.*/
+    background: darkred;
+}
