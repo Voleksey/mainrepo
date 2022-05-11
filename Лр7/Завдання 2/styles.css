@@ -1,10 +1,23 @@
-body{
+body{ /*Тут розмiщую по центру*/
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+
+button{
+    background: linear-gradient(to top, #368d36, #46b446);
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    color: white;
+}
+h1, p{ /*Назва i цiна плану*/
+    margin: 0px;
+    color: white;
+}
+
+
 .table{
     width: 200px;
     height: 120%;
@@ -21,31 +34,24 @@ body{
 .cell{
     margin: 8px;
 }
-button{
-    background: linear-gradient(to top, #368d36, #46b446);
-    border-radius: 5px;
-    padding: 5px 15px 5px 15px;
-    color: white;
-}
-h1, p{
-    margin: 0px;
-    color: white;
-}
 
 .block{
     display: inline-block;
-    overflow: hidden;
+    text-align: center;
+    overflow: hidden; /*Що б таблиця не виходила за рамку*/
     margin: 20px;
+
     border-radius: 10px;
     border: 2px solid silver;
-    
-    text-align: center;
-    
     background-color: #747474;
     box-shadow: 0px 0px 10px 1px black;
+    
+    
     transition: all 0.25s 0.25s;
 }
-.block:hover{
+.block:hover{ 
+    /*комірка шапки таблиці із назвою тарифу змінює колір,
+    якщо навести покажчик миші на комірку*/
     background-color: #40bd40;
     box-shadow: 0px 0px 20px 3px black;
     border: 2px solid #40bd40;
