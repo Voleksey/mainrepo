@@ -13,10 +13,10 @@ ul{
 
 .menu_mein{
     padding: 0px 10px;
-    height: 80px;
     
     /*Розміщуємо елементи по центру*/
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     
@@ -49,8 +49,8 @@ ul{
 /*Підменю*/
 .menu_mein ul{
     position: absolute;
-    left: 0;
-    top: 100%;
+    left: 100%;
+    top: 0%;
     z-index: 10;
     display: none;
 
@@ -60,7 +60,7 @@ ul{
 /*При наведенні на елемент головного меню змінюємо підменю*/
 .menu_mein > li:hover ul{
     display: block;
-    padding: 15px 5px 5px 25px;
+    padding: 0px 5px 5px 45px;
 
     list-style-type: square;
 }
