@@ -1,0 +1,45 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.menushka{
+    list-style: none;
+    color: blue
+}
+
+.menushka > li{
+    position: relative;
+    padding: 0.25em 1em;
+
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.menushka > li:hover{
+    background-color:aquamarine;
+}
+
+.menushka ul{
+    position: absolute;
+    color: black;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+    display: none;
+
+    list-style: none;
+    width: max-content;
+    padding-left: 2em;
+}
+.menushka > li:hover ul{
+    display: block;
+}
+
+
+.menushka > li > ul > li:hover{
+    color: rgb(255, 0, 0);
+}
